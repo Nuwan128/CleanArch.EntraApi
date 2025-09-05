@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>f5280f53-9bdb-4fbd-ad76-5a1048d96564</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.8">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Identity.Web" Version="3.14.0" />
+    <PackageReference Include="Microsoft.Identity.Web.UI" Version="3.14.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CleanArch.EntraApi.Application\CleanArch.EntraApi.Application.csproj" />
+    <ProjectReference Include="..\CleanArch.EntraApi.Infrastructure\CleanArch.EntraApi.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
